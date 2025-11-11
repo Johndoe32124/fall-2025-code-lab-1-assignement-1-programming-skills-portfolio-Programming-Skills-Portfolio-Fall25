@@ -1,7 +1,5 @@
 import os, sys
-project_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-dependencies_path = os.path.join(project_dir, "Dependencies")
-sys.path.append(dependencies_path)
+sys.path.append(os.path.join(os.path.dirname(__file__), "..", "Dependencies"))
 import Helper
 
 #Exercise 4
