@@ -5,8 +5,7 @@ import Helper
 
 #Exercise 5
 def get_days_in_month(year, month=1):
-	days = calendar.monthrange(year, month)[1]
-	return days
+	return calendar.monthrange(year, month)[1]
 
 year = Helper.input("Insert a year number: ", input_types=(int,))
 month = Helper.input("Insert a month number: ", input_types=(int,), min_value=1, max_value=12)
