@@ -1,17 +1,15 @@
 import calendar, os, sys
 from datetime import datetime
-
 sys.path.append(os.path.join(os.path.dirname(__file__), "..", "Dependencies"))
 import Helper
 
 #Exercise 5
 def get_days_in_month(year, month=1):
-	month = Helper.input("Insert a month number between 1 and 12 ", input_types=(int,), min_value=1, max_value=12)
 	days = calendar.monthrange(year, month)[1]
 	return days
 
-year = Helper.input("Insert a year number", input_types=(int,))
-month = Helper.input("Insert a month number ", input_types=(int,), min_value=1, max_value=12)
+year = Helper.input("Insert a year number: ", input_types=(int,))
+month = Helper.input("Insert a month number: ", input_types=(int,), min_value=1, max_value=12)
 print(f"Number of days in {calendar.month_name[month]} {year}: {get_days_in_month(year, month)}")
 
 #Done on October 8th
