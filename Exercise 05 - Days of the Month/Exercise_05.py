@@ -4,7 +4,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), "..", "Dependencies"))
 import Helper
 
 #Exercise 5
-def get_days_in_month(year, month=1):
+def get_days_in_month(year, month):
 	return calendar.month_name[month], calendar.monthrange(year, month)[1]
 
 year = Helper.input("Insert a year number: ", input_types=(int,))
